@@ -130,17 +130,17 @@
             const casePlusCount = document.getElementById("caseCount").value++;
             const caseCurrentPrice = document.getElementById("caseCurrentPrice").innerText;
             const caseCurrentPriceNum = parseFloat(caseCurrentPrice);
-            const totalCasePrice = caseCurrentPriceNum * casePlusCount ;
+            const totalCasePrice = caseCurrentPriceNum + 59;
             document.getElementById("caseCurrentPrice").innerText = totalCasePrice;
 
             const subTotalCurrent = document.getElementById('subTotalCurrent').innerText;
             const subTotalCurrentNum = parseFloat(subTotalCurrent);
-            const totalSubPrice =subTotalCurrentNum + 59;
+            const totalSubPrice =1278 + caseCurrentPriceNum;
             document.getElementById("subTotalCurrent").innerText = totalSubPrice;
 
             const totalCurrentBalance = document.getElementById("totalCurrentBalance").innerText;
             const totalCurrentBalanceNum = parseFloat(totalCurrentBalance);
-            const totalPrice = totalCurrentBalanceNum + 59 ;
+            const totalPrice =1278 + caseCurrentPriceNum;
             document.getElementById("totalCurrentBalance").innerText = totalPrice;
 
          });
